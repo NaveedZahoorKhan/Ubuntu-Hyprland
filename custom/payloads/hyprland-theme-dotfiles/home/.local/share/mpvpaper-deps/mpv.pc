@@ -1,0 +1,9 @@
+prefix=/home/icarus/.local/share/mpvpaper-deps/root/usr
+includedir=${prefix}/include
+libdir=${prefix}/lib/x86_64-linux-gnu
+
+Name: mpv
+Description: mpv media player client library for local mpvpaper build
+Version: 2.5.0
+Libs: -L${libdir} -Wl,-rpath,${libdir} -lmpv
+Cflags: -I${includedir}

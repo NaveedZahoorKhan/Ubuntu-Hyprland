@@ -1,0 +1,21 @@
+# Extra packages used by the custom Japanese Hyprland layer.
+# The installer skips packages that are unavailable on the target Ubuntu release.
+libsecret-tools
+network-manager-openvpn
+network-manager-openvpn-gnome
+network-manager-vpnc
+wireguard-tools
+python3-venv
+rsync
+zenity
+jq
+yad
+qt6-svg-dev
+qml6-module-qtquick-virtualkeyboard
+qt6-multimedia-dev
+qml6-module-qtquick-controls
+qml6-module-qtquick-effects
+qml6-module-qtquick-layouts
+qml6-module-qtmultimedia
+qml6-module-qt5compat-graphicaleffects
+libqt6multimedia6

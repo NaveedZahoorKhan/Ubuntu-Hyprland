@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=HyprRice
+Comment=Hyprland theme manager
+Exec=/home/icarus/.local/bin/hyprrice gui
+Icon=preferences-desktop-theme
+Terminal=false
+Categories=Settings;DesktopSettings;
+StartupNotify=true

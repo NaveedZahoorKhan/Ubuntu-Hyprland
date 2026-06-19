@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Wallpaper Selector
+GenericName=Wallpaper Selector
+Comment=Choose a Hyprland wallpaper
+Exec=/home/icarus/.config/hypr/UserScripts/WallpaperSelect.sh
+Icon=/home/icarus/.config/swaync/icons/picture.png
+Terminal=false
+Categories=Settings;DesktopSettings;
+Keywords=wallpaper;background;hyprland;desktop;
+StartupNotify=false

@@ -1,0 +1,160 @@
+clipboard:
+  auto_sync: true
+  exclude_patterns:
+  - password
+  - secret
+  - token
+  - key
+  history_size: 100
+  include_files: true
+  include_images: true
+  include_text: true
+  manager: cliphist
+  max_item_size: 1048576
+  sync_interval: 30
+general:
+  auto_backup: true
+  backup_retention: 10
+  language: en
+  live_preview: true
+  theme: auto
+gui:
+  auto_save: true
+  auto_save_interval: 30
+  show_status_bar: true
+  show_tooltips: true
+  theme: dark
+  window_height: 800
+  window_width: 1200
+hyprland:
+  animation_curve: ease-out
+  animation_duration: 0.5
+  animations_enabled: true
+  blur_enabled: true
+  blur_passes: 1
+  blur_shader_brightness: 0.0
+  blur_shader_contrast: 1.0
+  blur_shader_noise: 0.0
+  blur_shader_passes: 3
+  blur_shader_size: 4
+  blur_shader_type: kawase
+  blur_shader_vibrancy: 0.0
+  blur_shader_vibrancy_darkness: 0.0
+  blur_shaders_enabled: false
+  blur_size: 8
+  border_color: '#ffffff'
+  border_size: 1
+  gaps_in: 5
+  gaps_out: 10
+  glow_blur: 4
+  glow_color: '#ff6b6b'
+  glow_enabled: false
+  glow_offset: 0 0
+  glow_opacity: 0.8
+  glow_size: 8
+  hyprbars_buttons_color: '#ffffff'
+  hyprbars_buttons_gap: 8
+  hyprbars_buttons_hover_color: '#ff6b6b'
+  hyprbars_buttons_size: 12
+  hyprbars_enabled: false
+  hyprbars_height: 30
+  hyprbars_title_color: '#ffffff'
+  hyprbars_title_font: JetBrainsMono Nerd Font
+  hyprbars_title_size: 12
+  hyprexpo_enabled: false
+  hyprexpo_workspace_gaps: 5
+  hyprexpo_workspace_method: first 1
+  hyprexpo_workspace_rounding: 5
+  hyprexpo_workspace_shadow: true
+  hyprexpo_workspace_shadow_color: '#000000'
+  hyprexpo_workspace_shadow_offset: 0 4
+  hyprexpo_workspace_shadow_size: 4
+  smart_borders: true
+  smart_gaps: true
+  sourced_files:
+  - ~/.config/hypr/configs/Keybinds.conf
+  - ~/.config/hypr/configs/Startup_Apps.conf
+  - ~/.config/hypr/UserConfigs/Startup_Apps.conf
+  - ~/.config/hypr/configs/ENVariables.conf
+  - ~/.config/hypr/UserConfigs/ENVariables.conf
+  - ~/.config/hypr/configs/Laptops.conf
+  - ~/.config/hypr/UserConfigs/Laptops.conf
+  - ~/.config/hypr/UserConfigs/LaptopDisplay.conf
+  - ~/.config/hypr/configs/WindowRules.conf
+  - ~/.config/hypr/UserConfigs/WindowRules.conf
+  - ~/.config/hypr/configs/SystemSettings.conf
+  - ~/.config/hypr/UserConfigs/UserDecorations.conf
+  - ~/.config/hypr/UserConfigs/UserAnimations.conf
+  - ~/.config/hypr/UserConfigs/UserKeybinds.conf
+  - ~/.config/hypr/UserConfigs/UserSettings.conf
+  - ~/.config/hypr/UserConfigs/HyprRiceGenerated.conf
+  - ~/.config/hypr/UserConfigs/01-UserDefaults.conf
+  - ~/.config/hypr/monitors.conf
+  - ~/.config/hypr/workspaces.conf
+  window_opacity: 1.0
+lockscreen:
+  animation_duration: 0.3
+  background: ~/.config/hyprlock/background.jpg
+  background_color: '#000000'
+  blur_background: true
+  blur_size: 8
+  border_color: '#5e81ac'
+  border_size: 2
+  clock_format: '%H:%M:%S'
+  daemon: hyprlock
+  date_format: '%Y-%m-%d'
+  fade_in: true
+  fade_out: true
+  fade_time: 0.5
+  font_family: JetBrainsMono Nerd Font
+  font_size: 24
+  grace_period: 5
+  show_clock: true
+  show_date: true
+  text_color: '#ffffff'
+  timeout: 300
+meta:
+  version: 1.0.0
+notifications:
+  background_color: '#2e3440'
+  border_color: '#5e81ac'
+  daemon: dunst
+  font_family: JetBrainsMono Nerd Font
+  font_size: 12
+  position: top-right
+  text_color: '#eceff4'
+  timeout: 5000
+paths:
+  backup_dir: /home/icarus/.hyprrice/backups
+  dunst_config: /home/icarus/.config/dunst
+  hyprland_config: /home/icarus/.config/hypr/hyprland.conf
+  log_dir: /home/icarus/.hyprrice/logs
+  mako_config: /home/icarus/.config/mako
+  rofi_config: /home/icarus/.config/rofi
+  theme_dir: /home/icarus/.hyprrice/themes
+  waybar_config: /home/icarus/.config/waybar
+rofi:
+  anchor: center
+  background_color: '#2e3440'
+  border_color: '#5e81ac'
+  font_family: JetBrainsMono Nerd Font
+  font_size: 14
+  location: center
+  text_color: '#eceff4'
+  theme: default
+  width: 40
+waybar:
+  background_color: rgba(43, 48, 59, 0.5)
+  border_color: rgba(100, 115, 245, 0.5)
+  font_family: JetBrainsMono Nerd Font
+  font_size: 13
+  height: 30
+  modules:
+  - clock
+  - battery
+  - network
+  - cpu
+  - memory
+  - tray
+  position: top
+  text_color: '#ffffff'

@@ -66,6 +66,22 @@ https://github.com/user-attachments/assets/49bc12b2-abaf-45de-a21c-67aacd9bb872
 - This Installer requires a user with a priviledge to install packages
 - This is only 25.10 Questing Quokka and above. Check [`MAIN BRANCH`](https://github.com/JaKooLit/Ubuntu-Hyprland/tree/main) for other Ubuntu Versions
 
+### Japanese Hyprland Fork Installer
+
+This fork includes a bundled custom layer for the current Japanese aesthetic
+desktop setup:
+
+```bash
+chmod +x install-japanese-hyprland.sh
+./install-japanese-hyprland.sh
+```
+
+It applies the JaKooLit Ubuntu Hyprland base, the local dotfile fixes, the
+current Waybar/Rofi/Hyprland setup, live wallpaper helpers, VPN/SSH helper
+scripts, and the bundled SDDM Astronaut `japanese_aesthetic` theme. See
+[`JAPANESE_INSTALLER.md`](JAPANESE_INSTALLER.md) for options and package
+details.
+
 ### Gallery and Videos
 
 #### 🎥 Feb 2025 Video explanation of installation with preset
