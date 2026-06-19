@@ -82,6 +82,7 @@ home/.config/gtk-4.0/settings.ini
 home/.config/hypr/.initial_startup_done
 home/.config/hypr/Monitor_Profiles/README
 home/.config/hypr/Monitor_Profiles/default.conf
+home/.config/hypr/Monitor_Profiles/icarus-dual-display.conf
 home/.config/hypr/UserConfigs/00-Readme
 home/.config/hypr/UserConfigs/01-UserDefaults.conf
 home/.config/hypr/UserConfigs/ENVariables.conf

@@ -16,6 +16,7 @@ Useful variants:
 ./install-japanese-hyprland.sh --custom-only
 ./install-japanese-hyprland.sh --no-sddm-enable
 ./install-japanese-hyprland.sh --skip-hyprrice
+./install-japanese-hyprland.sh --use-icarus-monitor-profile
 ```
 
 ## Included Custom Layer
@@ -30,6 +31,8 @@ Useful variants:
 - `swww` wallpaper startup and `mpvpaper` live wallpaper helper.
 - User-local `mpvpaper` binary plus the local `libmpv` runtime it was built
   against.
+- Optional `icarus-dual-display` Hyprland monitor profile for the local
+  eDP-1 + HDMI-A-1 setup.
 - SDDM Astronaut theme bundled locally, configured to
   `Themes/japanese_aesthetic.conf`.
 - Extra package list in `custom/required-packages.txt`.

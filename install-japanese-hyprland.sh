@@ -7,6 +7,7 @@ SKIP_SDDM=0
 ENABLE_SDDM=1
 SKIP_HYPRRICE=0
 NO_REBOOT_PROMPT=0
+USE_ICARUS_MONITOR_PROFILE=0
 
 usage() {
   cat <<'EOF'
@@ -21,6 +22,8 @@ Options:
   --skip-sddm         Do not install/configure SDDM.
   --no-sddm-enable    Install SDDM theme but do not enable sddm.service.
   --skip-hyprrice     Do not install the HyprRice helper app.
+  --use-icarus-monitor-profile
+                      Apply the captured eDP-1 + HDMI-A-1 monitor layout.
   --no-reboot-prompt  Finish without asking to reboot.
   -h, --help          Show this help.
 EOF
@@ -32,6 +35,7 @@ while (($#)); do
     --skip-sddm) SKIP_SDDM=1 ;;
     --no-sddm-enable) ENABLE_SDDM=0 ;;
     --skip-hyprrice) SKIP_HYPRRICE=1 ;;
+    --use-icarus-monitor-profile) USE_ICARUS_MONITOR_PROFILE=1 ;;
     --no-reboot-prompt) NO_REBOOT_PROMPT=1 ;;
     -h|--help) usage; exit 0 ;;
     *) echo "Unknown option: $1" >&2; usage >&2; exit 2 ;;
@@ -90,6 +94,7 @@ fi
 
 dot_args=()
 [[ "$SKIP_HYPRRICE" -eq 1 ]] && dot_args+=(--skip-hyprrice)
+[[ "$USE_ICARUS_MONITOR_PROFILE" -eq 1 ]] && dot_args+=(--use-icarus-monitor-profile)
 run_step "Apply custom Hyprland dotfiles" bash "$ROOT_DIR/custom/apply-dotfiles.sh" "${dot_args[@]}"
 
 if [[ -x "$ROOT_DIR/install-scripts/03-Final-Check.sh" ]]; then
